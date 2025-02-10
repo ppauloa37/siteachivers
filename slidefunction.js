@@ -15,6 +15,13 @@ hello word
 |
 structure site
 */
+    this.images = [];
+    this.curImage = 0;
+    for (i = 0; i < container.childElementCount; i++) {
+        this.images.push(container.children[i]);
+        this.images[i].style.display = "none";
+    }
+
     var nextSlide = function() {
         for (var i = 0; i < this.images.length; i++) {
             this.images[i].style.display = "none";
@@ -24,9 +31,9 @@ structure site
         if (this.curImage >= this.images.length) {
             this.curImage = 0;
         }
-        window.setTimeout(nextSlide.bind(this), 1000);
+        window.setTimeout(nextSlide.bind(this), 2000);
     };
     
     nextSlide.call(this);
 };
-slideShow(document.getElementById("slideshow"));
+
