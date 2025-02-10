@@ -1,20 +1,4 @@
-//github site to khana academy
-/* html code 
-<!doctype html>
-<html>
-<head>
-<title>example</title>
-<meta charset="utf-8">
-</head>
-<body>
-hello word
-</body>
-</html>
-^
-|
-|
-structure site
-*/
+
     this.images = [];
     this.curImage = 0;
     for (i = 0; i < container.childElementCount; i++) {
